@@ -41,7 +41,8 @@ bool AzureKinect::SetUp() {
     config_.synchronized_images_only = true;
     if (use_color_camera_) {
       config_.color_format = K4A_IMAGE_FORMAT_COLOR_BGRA32;
-      config_.color_resolution = K4A_COLOR_RESOLUTION_720P;
+      // config_.color_resolution = K4A_COLOR_RESOLUTION_720P;
+      config_.color_resolution = K4A_COLOR_RESOLUTION_1080P;
     }
     if (use_depth_camera_) {
       config_.depth_mode = K4A_DEPTH_MODE_NFOV_UNBINNED;
